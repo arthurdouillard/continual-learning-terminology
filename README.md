@@ -15,6 +15,8 @@ Multiple keywords can correspond to actually the same definition. In that case, 
 | **Task Incremental Learning** | | Each new task is made of new never-seen-before classes; access task id at test-time. | Multi Heads |
 | **Rehearsal Learning** | | Re-use a bounded amount of previous data in a rehearsal memory. | |
 | **Episodic Replay** | | Re-use a bounded amount of previous data in a rehearsal memory. | Rehearsal Learning |
+| **Pseudo-Rehearsal Learning** | | Generate previous data to be rehearsed. | Rehearsal Learning |
+| **Generative Replay** | | Generate previous data to be rehearsed. | Pseudo-Rehearsal Learning |
 | **Single Head** | [Chaudhry18](https://arxiv.org/abs/1801.10112) | No access to task identifier at test-time. | |
 | **Multi Heads** | [Chaudhry18](https://arxiv.org/abs/1801.10112) | Access to task identifier at test-time. | |
-
+| **Joint Model** | | Oracle model that learns jointly on all tasks | |
